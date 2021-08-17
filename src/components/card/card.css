@@ -1,0 +1,64 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #95dada;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .mail{
+    color: #037272;
+}
+  .mail:hover{
+      color: #044747;
+  }
+
+  .imageSize{
+    width: auto;
+    height: 300px;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-bottom: 20px;
+    
+  }
+  .name {
+    width: 60%;
+  }
+
+    .price {
+      width: 20%;
+    }
+
+    .btn{
+      color: #fff;
+      background: #1890ff;
+      border-color: #1890ff;
+      text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+      box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    }
+
+  .mr{
+    padding: 5px;
+  }
+  .ant-space {
+    display: inline-flex;
+    justify-content: space-between;
+}
+  
