@@ -5,22 +5,22 @@ import './card.css';
 export const Card = props => {
     return (
         <div className="card-container">
-            <img alt="product" className="imageSize" src={`${props.item.imageUrl}`} />
+            <img alt="product" className="imageSize" src={`${props.item.image}`} />
 
             <div className='footer'>
-                <span className="name">{props.item.name}</span>
+                <span className="name">{props.item.title}</span>
                 <span className="price">{props.item.price} $ </span>
             </div>
             <Space size={100}>
                 <Button type="primary">Buy</Button>
                 <Link className="ant-btn ant-btn-primary" 
-                // to={`product/productView/${props.item.id}`}
-                to={{
-                    pathname: `product/productView/${props.item.id}`,
-                    state: {
-                      fromNotifications: true,
-                    },
-                  }}
+                to={`product/productView/${props.item.id}`}
+                // to={{
+                //     pathname: `product/productView/${props.item.id}`,
+                //     state: {
+                //       fromNotifications: true,
+                //     },
+                //   }}
                 >View</Link>
             </Space>
 
