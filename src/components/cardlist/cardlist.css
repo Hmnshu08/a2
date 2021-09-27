@@ -4,5 +4,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .cardlist {
+    display: contents;
   }
-  
+}
+
+@media screen and (max-width: 1200px) {
+  .cardlist {
+    width: 76vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
